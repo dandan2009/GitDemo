@@ -14,14 +14,22 @@
 
 @property (nonatomic, strong) TestClass * testClass;
 
+-(void)sayHello;
+
 @end
 
 @implementation ViewController
+
+-(void)sayHello
+{
+    NSLog(@"Hello");
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self sayHello];
 }
 
 - (void)didReceiveMemoryWarning
